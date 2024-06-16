@@ -25,8 +25,8 @@ const getDescription = (id, results) => {
 
   const percent = getStatistic(results, currentResult.id);
   const { time, correctAnswers } = currentResult;
-  const minutes = String(time / 60).padStart(2, `0`);
-  // const minutes = String(parseInt(time / 60, 10)).padStart(2, `0`);
+  //const minutes = String(time / 60).padStart(2, `0`);
+  const minutes = String(parseInt(time / 60, 10)).padStart(2, `0`);
   const seconds = String(time % 60).padStart(2, `0`);
   return (
     <div>

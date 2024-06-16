@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { GenreAnswer } from './GenreAnswer';
-
 export const GenreLevel = ({ question, children }) => {
   const [answers, setAnswers] = useState(
     question.answers.map((answer, index) => {
